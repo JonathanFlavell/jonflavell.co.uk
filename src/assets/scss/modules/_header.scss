@@ -1,0 +1,16 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: $navbar-height;
+  width: 100%;
+  background: $background;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid lighten($black, 75%);
+
+  &> h1 {
+    padding-left: $padding;
+    color: $green;
+  }
+}

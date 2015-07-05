@@ -1,0 +1,20 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: ($navbar-height / 2);
+  width: 100%;
+  background: $background;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid lighten($black, 75%);
+
+  &> a {
+    color: $green;
+    text-decoration: none;
+
+    &:hover {
+      color: $light-green;
+    }
+  }
+}
