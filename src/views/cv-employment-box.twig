@@ -1,0 +1,10 @@
+<div class="cv-box collapse" data-collapse>
+    <p class="cv-box__header">Experience
+        <span class="cv-box__dropdown collapse__label">&nbsp;</span>
+    </p>
+    <div class="cv-box__content collapse__content">
+        {% for employer in employers %}
+            {% include 'cv-employer.twig' with {'employer': employer} %}
+        {% endfor %}
+    </div>
+</div>
