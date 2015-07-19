@@ -1,2 +1,13 @@
-$navbar-height: 60px;
-$padding: 10px;
+$smallBreakPoint: 365px;
+
+$multiplier-lg: 1.2;
+
+$baseFontSize: 14px;
+$baseLineHeight: 20px;
+
+$font-size-lg: $baseFontSize * $multiplier-lg;
+$line-height-lg: $baseLineHeight * $multiplier-lg;
+$padding: $baseLineHeight / 2;
+$padding-lg: $padding * $multiplier-lg;
+$navbar-height: ($baseLineHeight * 2);
+$navbar-height-lg: (($baseLineHeight * $multiplier-lg) * 2);

@@ -18,14 +18,31 @@
 
 <body>
     <header>
-        <h1 class="heading">JonFlavell.co.uk</h1>
+        <nav class="heading heading--fixed-top">
+            <div class="heading__nav">
+                <ul class="right">
+                    <li>E:<a href="mailto:jon@jonflavell.co.uk"> jon@jonflavell.co.uk</a></li>
+                </ul>
+                <ul class="left">
+                    <li>JonFlavell.co.uk</li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    {% block main   %}{% endblock %}
-    <footer class="footer">
-        <a class="" href="/">Home</a>
-        <a class="" href="/cv">My CV</a>
-        <a class="" href="//github.com/JonathanFlavell">My GitHub</a>
-        {#<a class="" href="#">linkedin?</a>#}
+
+    <div class="content--fixed-heading">
+        {% block main   %}{% endblock %}
+    </div>
+
+    <footer class="footer footer--fixed-bottom">
+        <div class="footer__links">
+            <ul>
+                <li><a class="" href="/">Home</a></li>
+                <li><a class="" href="/cv">My CV</a></li>
+                <li><a class="" href="//github.com/JonathanFlavell">My GitHub</a></li>
+                {#<a class="" href="#">linkedin?</a>#}
+            </ul>
+        </div>
     </footer>
 </body>
 

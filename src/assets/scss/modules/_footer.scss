@@ -1,20 +1,59 @@
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: ($navbar-height / 2);
+.footer {
+  @extend %border-box;
+  @extend %clearfix;
+
+  display: block;
   width: 100%;
-  background: $background;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  height: $navbar-height-lg;
+  background: $white;
+
+  z-index: 9999;
+
   border-top: 1px solid lighten($black, 75%);
 
-  &> a {
-    color: $green;
-    text-decoration: none;
+  &--fixed-bottom {
+    position: fixed;
+    bottom: 0;
+  }
 
-    &:hover {
-      color: $light-green;
+
+  &__links {
+
+    & > ul {
+      text-align: center;
+      margin: 0;
+      padding: $padding-lg;
+      color: $green;
+
+      & > li {
+        cursor: pointer;
+        padding-left: $padding-lg;
+        padding-right: $padding-lg;
+        display: inline-block;
+        font-size: $font-size-lg;
+
+        & > a {
+          color: $green;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $smallBreakPoint) {
+    height: $navbar-height;
+
+    &__links {
+
+      & > ul {
+        padding: $padding;
+
+        & > li {
+          padding-left: $padding;
+          padding-right: $padding;
+          font-size: $baseFontSize;
+        }
+      }
     }
   }
 }

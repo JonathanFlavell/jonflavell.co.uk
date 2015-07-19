@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content {
+
+  &--fixed-heading {
+    margin-top: $navbar-height-lg;
+  }
+}

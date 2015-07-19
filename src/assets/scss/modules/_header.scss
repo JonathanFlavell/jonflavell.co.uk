@@ -1,16 +1,81 @@
-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: $navbar-height;
+.heading {
+  @extend %border-box;
+  @extend %clearfix;
+
+  display: block;
   width: 100%;
-  background: $background;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  height: $navbar-height-lg;
+  background: $white;
+
+  z-index: 9999;
+
   border-bottom: 1px solid lighten($black, 75%);
 
-  &> h1 {
-    padding-left: $padding;
-    color: $green;
+  &--fixed-top {
+    position: fixed;
+    top: 0;
+  }
+
+
+  &__nav {
+    padding-left: $padding-lg;
+    padding-right: $padding-lg;
+
+    & > ul {
+      margin: 0;
+      &.left {
+        float: left;
+        padding: $padding-lg;
+        color: $green;
+
+        & > li {
+          display: inline-block;
+          font-size: $font-size-lg;
+          color: $green;
+        }
+      }
+
+      &.right {
+        float: right;
+        padding: $padding-lg;
+
+        & > li {
+          display: inline-block;
+          font-size: $font-size-lg;
+
+          & > a {
+            text-decoration: none;
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $smallBreakPoint) {
+    height: $navbar-height;
+
+    &__nav {
+      padding-left: $padding;
+      padding-right: $padding;
+
+      & > ul {
+        &.left {
+          padding: $padding;
+
+          & > li {
+            font-size: $baseFontSize;
+          }
+        }
+
+        &.right {
+          padding: $padding;
+
+          & > li {
+            font-size: $baseFontSize;
+          }
+        }
+      }
+    }
   }
 }
