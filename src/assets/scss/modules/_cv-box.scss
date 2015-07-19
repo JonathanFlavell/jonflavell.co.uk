@@ -18,12 +18,8 @@
     font-size: $fontSizeSmall;
   }
 
-  &__dropdown {
-
-  }
-
   &__content {
-
+    margin: $padding;
   }
 
   @media (min-width: $smallBreakPoint) {
@@ -32,10 +28,6 @@
 
     &__sub-header {
       font-size: $baseFontSize;
-    }
-
-    &__dropdown {
-      display: none;
     }
   }
 
@@ -46,10 +38,6 @@
     &__sub-header {
       font-size: $fontSizeLarge;
     }
-
-    &__dropdown {
-      display: none;
-    }
   }
 
   @media (min-width: $largeBreakpoint) {
@@ -58,10 +46,6 @@
 
     &__sub-header {
       font-size: $fontSizeVeryLarge;
-    }
-
-    &__dropdown {
-      display: none;
     }
   }
 }

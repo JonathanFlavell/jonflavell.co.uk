@@ -7,13 +7,8 @@
 
       &:after {
         font-family: FontAwesome, Arial, Helvetica, sans-serif;
-        content: "\f077"
+        content: "\00a0\f077"
       }
-    }
-
-    &:after {
-      font-family: FontAwesome, Arial, Helvetica, sans-serif;
-      content: "\f078"
     }
   }
 
@@ -22,9 +17,22 @@
   }
 
   @media (min-width: $smallBreakPoint) {
+    &__label {
+      cursor: default;
+    }
+
     &__content {
       display: block;
-      height: 100%;
+    }
+  }
+
+  @media (max-width: $smallBreakPoint) {
+    &__label {
+
+      &:after {
+        font-family: FontAwesome, Arial, Helvetica, sans-serif;
+        content: "\00a0\f078"
+      }
     }
   }
 }
