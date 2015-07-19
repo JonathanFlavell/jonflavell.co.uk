@@ -1,0 +1,23 @@
+.collapse {
+
+  &__label {
+    cursor: pointer;
+
+    &.open {
+
+      &:after {
+        font-family: FontAwesome, Arial, Helvetica, sans-serif;
+        content: "\f077"
+      }
+    }
+
+    &:after {
+      font-family: FontAwesome, Arial, Helvetica, sans-serif;
+      content: "\f078"
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+}
