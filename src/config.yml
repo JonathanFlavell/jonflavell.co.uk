@@ -1,16 +1,42 @@
-jobs.ac.uk:
-  jobTitle: 'Assistant Web Developer'
-  company: 'jobs.ac.uk'
-  dates: 'March 2014 - Present'
-  content: 'test'
-whisk:
-  jobTitle: 'Web Development Intern'
-  company: 'Whisk'
-  dates: 'August 2013 - January 2014'
+profile:
+  title: 'Profile'
   content: >
-            Selected for an 8 week work experience program which quickly led to a full internship at
-            Whisk, a local startup developing a social online recipe web service with matching IOS
-            and android applications. Training with Whisk’s development team, I developed a Chrome
-            browser plugin to help the data team improve efficiency. During this time I assisted with
-            data entry and in my spare time, I helped the development team with front-end web
-            development for their admin site using AngularJS and CoffeeScript.
+            Graduate developer looking to launch an exciting career in the software industry.
+            With a hunger to learn and a keen passion for coding, I love the satisfaction
+            that comes from building software that is functional and exciting to others.
+employers:
+  jobs.ac.uk:
+    jobTitle: 'Assistant Web Developer'
+    company: 'jobs.ac.uk'
+    dates: 'March 2014 - Present'
+    content: >
+              This is where I currently work! I haven't decided what to put in this place yet
+              so for the moment its filled with rubbish just to fill up the space :D.
+  whisk:
+    jobTitle: 'Web Development Intern'
+    company: 'Whisk'
+    dates: 'August 2013 - January 2014'
+    content: >
+              Selected for an 8 week work experience program which quickly led to a full
+              internship at Whisk, a local startup developing a social online recipe web
+              service with matching IOS and android applications. Training with Whisk’s
+              development team, I developed a Chrome browser plugin to help the data team
+              improve efficiency. During this time I assisted with data entry and in my
+              spare time, I helped the development team with front-end web development for
+              their admin site using AngularJS and CoffeeScript.
+education:
+  title: 'Education'
+  school: 'University of Norhampton'
+  qualification: 'BSc Computing (Software Engineering)'
+  dates: 'September 2009 - July 2013.'
+technologies:
+  title: 'Technologies'
+  content: >
+            PHP, HTML, CSS, SASS, Javascript, Coffeescript, MySQL, AngularJS, C#
+interests:
+  title: 'Interests'
+  content: >
+            Listening to music, playing computer games, small development projects to hone
+            my skills and gain experience. I also enjoy building custom PC’s; I have never
+            owned a PC that I haven’t built myself.
+

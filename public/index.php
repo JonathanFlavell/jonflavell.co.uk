@@ -11,12 +11,25 @@ $app = new  \Slim\Slim([
 ]);
 
 $app->get('/', function () use ($app) {
-    $app->render('index.twig');
+    $app->render('index.twig', ['pageTitle' => 'Home']);
 });
 
 $app->get('/cv', function () use ($app) {
-    $employers = Yaml::parse(file_get_contents($app->config('config.path')));
-    $app->render('cv.twig', ['employers' => $employers]);
+    $config = Yaml::parse(file_get_contents($app->config('config.path')));
+    $profile = $config['profile'];
+    $employers = $config['employers'];
+    $education = $config['education'];
+    $technologies = $config['technologies'];
+    $interests = $config['interests'];
+
+    $app->render('cv.twig', [
+        'pageTitle' => 'CV',
+        'profile' => $profile,
+        'employers' => $employers,
+        'education' => $education,
+        'technologies' => $technologies,
+        'interests' => $interests
+    ]);
 });
 
 $app->run();
