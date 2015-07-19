@@ -2,28 +2,28 @@ $smallBreakPoint: 400px;
 $mediumBreakPoint: 600px;
 $largeBreakpoint: 1000px;
 
-$multiplier-sm: 0.8;
-$multiplier-lg: 1.2;
-$multiplier-v-lg: 1.4;
+$multiplierSmall: 0.8;
+$multiplierLarge: 1.2;
+$multiplierVeryLarge: 1.4;
 
 $baseFontSize: 14px;
 $baseLineHeight: 20px;
 $padding: $baseLineHeight / 2;
 
-$navbar-height: ($baseLineHeight * 2);
+$navbarHeight: ($baseLineHeight * 2);
 
-$font-size-sm: $baseFontSize * $multiplier-sm;
-$font-size-lg: $baseFontSize * $multiplier-lg;
-$font-size-v-lg: $baseFontSize * $multiplier-v-lg;
+$fontSizeSmall: $baseFontSize * $multiplierSmall;
+$fontSizeLarge: $baseFontSize * $multiplierLarge;
+$fontSizeVeryLarge: $baseFontSize * $multiplierVeryLarge;
 
-$line-height-sm: $baseLineHeight * $multiplier-sm;
-$line-height-lg: $baseLineHeight * $multiplier-lg;
-$line-height-v-lg: $baseLineHeight * $multiplier-v-lg;
+$lineHeightSmall: $baseLineHeight * $multiplierSmall;
+$lineHeightLarge: $baseLineHeight * $multiplierLarge;
+$lineHeightVeryLarge: $baseLineHeight * $multiplierVeryLarge;
 
-$padding-sm: $padding * $multiplier-sm;
-$padding-lg: $padding * $multiplier-lg;
-$padding-v-lg: $padding * $multiplier-v-lg;
+$paddingSmall: $padding * $multiplierSmall;
+$paddingLarge: $padding * $multiplierLarge;
+$paddingVeryLarge: $padding * $multiplierVeryLarge;
 
-$navbar-height-sm: (($baseLineHeight * $multiplier-sm) * 2);
-$navbar-height-lg: (($baseLineHeight * $multiplier-lg) * 2);
-$navbar-height-v-lg: (($baseLineHeight * $multiplier-v-lg) * 2);
+$navbarHeightSmall: (($baseLineHeight * $multiplierSmall) * 2);
+$navbarHeightLarge: (($baseLineHeight * $multiplierLarge) * 2);
+$navbarHeightVeryLarge: (($baseLineHeight * $multiplierVeryLarge) * 2);

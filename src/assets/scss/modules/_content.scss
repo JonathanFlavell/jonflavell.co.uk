@@ -4,21 +4,25 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   @media (max-width: $smallBreakPoint) {
-    font-size: $font-size-sm;
+    font-size: $fontSizeSmall;
   }
 
   @media (min-width: $mediumBreakPoint) {
-    font-size: $font-size-lg;
+    font-size: $fontSizeLarge;
   }
 
   @media (min-width: $largeBreakpoint) {
-    font-size: $font-size-v-lg;
+    font-size: $fontSizeVeryLarge;
   }
 }
 
 .content {
 
   &--fixed-heading {
-    margin-top: $navbar-height-lg;
+    margin-top: $navbarHeightLarge;
+  }
+
+  &--fixed-footer {
+    margin-bottom: $navbarHeightLarge;
   }
 }

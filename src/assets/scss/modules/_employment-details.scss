@@ -7,7 +7,7 @@
   width: 100%;
 
   & > li {
-    padding: $padding-sm / 2;
+    padding: $paddingSmall / 2;
     display: block;
     text-decoration: none;
   }
@@ -64,8 +64,8 @@
 
   @media (min-width: $largeBreakpoint) {
     & > li {
-      padding: $padding-lg / 2;
-      font-size: $font-size-lg;
+      padding: $paddingLarge / 2;
+      font-size: $fontSizeLarge;
     }
   }
 }

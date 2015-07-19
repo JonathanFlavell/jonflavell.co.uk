@@ -4,7 +4,7 @@
 
   display: block;
   width: 100%;
-  height: $navbar-height;
+  height: $navbarHeight;
   background: $white;
 
   z-index: 9999;
@@ -58,26 +58,26 @@
   }
 
   @media (max-width: $smallBreakPoint) {
-    height: $navbar-height-sm;
+    height: $navbarHeightSmall;
 
     &__nav {
-      padding-left: $padding-sm;
-      padding-right: $padding-sm;
+      padding-left: $paddingSmall;
+      padding-right: $paddingSmall;
 
       & > ul {
         &.left {
-          padding: $padding-sm;
+          padding: $paddingSmall;
 
           & > li {
-            font-size: $font-size-sm;
+            font-size: $fontSizeSmall;
           }
         }
 
         &.right {
-          padding: $padding-sm;
+          padding: $paddingSmall;
 
           & > li {
-            font-size: $font-size-sm;
+            font-size: $fontSizeSmall;
           }
         }
       }
@@ -85,26 +85,26 @@
   }
 
   @media (min-width: $mediumBreakPoint) {
-    height: $navbar-height-lg;
+    height: $navbarHeightLarge;
 
     &__nav {
-      padding-left: $padding-lg;
-      padding-right: $padding-lg;
+      padding-left: $paddingLarge;
+      padding-right: $paddingLarge;
 
       & > ul {
         &.left {
-          padding: $padding-lg;
+          padding: $paddingLarge;
 
           & > li {
-            font-size: $font-size-lg;
+            font-size: $fontSizeLarge;
           }
         }
 
         &.right {
-          padding: $padding-lg;
+          padding: $paddingLarge;
 
           & > li {
-            font-size: $font-size-lg;
+            font-size: $fontSizeLarge;
           }
         }
       }
@@ -112,26 +112,26 @@
   }
 
   @media (min-width: $largeBreakpoint) {
-    height: $navbar-height-v-lg;
+    height: $navbarHeightVeryLarge;
 
     &__nav {
-      padding-left: $padding-v-lg;
-      padding-right: $padding-v-lg;
+      padding-left: $paddingVeryLarge;
+      padding-right: $paddingVeryLarge;
 
       & > ul {
         &.left {
-          padding: $padding-v-lg;
+          padding: $paddingVeryLarge;
 
           & > li {
-            font-size: $font-size-v-lg;
+            font-size: $fontSizeVeryLarge;
           }
         }
 
         &.right {
-          padding: $padding-v-lg;
+          padding: $paddingVeryLarge;
 
           & > li {
-            font-size: $font-size-v-lg;
+            font-size: $fontSizeVeryLarge;
           }
         }
       }

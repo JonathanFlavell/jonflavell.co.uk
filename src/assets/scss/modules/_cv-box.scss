@@ -9,13 +9,13 @@
 
   &__header {
     color: $green;
-    font-size: $font-size-lg;
+    font-size: $fontSizeLarge;
   }
 
   &__sub-header {
     color: $green;
     font-weight: bold;
-    font-size: $font-size-sm;
+    font-size: $fontSizeSmall;
   }
 
   &__dropdown {
@@ -44,7 +44,7 @@
     max-width: 80%;
 
     &__sub-header {
-      font-size: $font-size-lg;
+      font-size: $fontSizeLarge;
     }
 
     &__dropdown {
@@ -57,7 +57,7 @@
     max-width: 80%;
 
     &__sub-header {
-      font-size: $font-size-v-lg;
+      font-size: $fontSizeVeryLarge;
     }
 
     &__dropdown {

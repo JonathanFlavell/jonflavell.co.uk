@@ -4,7 +4,7 @@
 
   display: block;
   width: 100%;
-  height: $navbar-height-lg;
+  height: $navbarHeightLarge;
   background: $white;
 
   z-index: 9999;
@@ -22,15 +22,15 @@
     & > ul {
       text-align: center;
       margin: 0;
-      padding: $padding-lg;
+      padding: $paddingLarge;
       color: $green;
 
       & > li {
         cursor: pointer;
-        padding-left: $padding-lg;
-        padding-right: $padding-lg;
+        padding-left: $paddingLarge;
+        padding-right: $paddingLarge;
         display: inline-block;
-        font-size: $font-size-lg;
+        font-size: $fontSizeLarge;
 
         & > a {
           color: $green;
@@ -41,24 +41,24 @@
   }
 
   @media (max-width: $smallBreakPoint) {
-    height: $navbar-height-sm;
+    height: $navbarHeightSmall;
 
     &__links {
 
       & > ul {
-        padding: $padding-sm;
+        padding: $paddingSmall;
 
         & > li {
-          padding-left: $padding-sm;
-          padding-right: $padding-sm;
-          font-size: $font-size-sm;
+          padding-left: $paddingSmall;
+          padding-right: $paddingSmall;
+          font-size: $fontSizeSmall;
         }
       }
     }
   }
 
   @media (min-width: $mediumBreakPoint) {
-    height: $navbar-height;
+    height: $navbarHeight;
 
     &__links {
 
@@ -75,17 +75,17 @@
   }
 
   @media (min-width: $largeBreakpoint) {
-    height: $navbar-height-v-lg;
+    height: $navbarHeightVeryLarge;
 
     &__links {
 
       & > ul {
-        padding: $padding-v-lg;
+        padding: $paddingVeryLarge;
 
         & > li {
-          padding-left: $padding-v-lg;
-          padding-right: $padding-v-lg;
-          font-size: $font-size-v-lg;
+          padding-left: $paddingVeryLarge;
+          padding-right: $paddingVeryLarge;
+          font-size: $fontSizeVeryLarge;
         }
       }
     }
