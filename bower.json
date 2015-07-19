@@ -4,7 +4,8 @@
     "Jonathan Flavell <jon@jonflavell.co.uk>"
   ],
   "dependencies": {
-    "jquery": "~2.1"
+    "jquery": "~2.1",
+    "font-awesome": "~4.3.0"
   },
   "license": "MIT",
   "ignore": [

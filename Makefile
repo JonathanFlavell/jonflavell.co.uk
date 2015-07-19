@@ -21,6 +21,9 @@ CSS_APP_FILE = ${CSS_DIR}/app.css
 SCSS_DIR = ${SRC_DIR}/scss
 SCSS_APP_FILE = ${SCSS_DIR}/app.scss
 
+FONTS_DIR = ${PUBLIC_DIR}/fonts
+FONT_FILES = ${BOWER_DIR}/font-awesome/fonts/*
+
 COFFEE_FILES = ${SRC_DIR}/coffee/*.coffee
 
 all: clean depend build
@@ -28,6 +31,7 @@ all: clean depend build
 clean:
 	rm -rf ${CSS_DIR}
 	rm -rf ${JS_DIR}
+	rm -rf ${FONTS_DIR}
 	rm -rf ${VENDOR_DIR}
 	rm -rf ${BOWER_DIR}
 
@@ -46,7 +50,8 @@ build: scss coffee
 # ASSET PIPELINE
 ###
 build-dirs:
-	mkdir -p ${CSS_DIR} ${JS_DIR}
+	mkdir -p ${CSS_DIR} ${JS_DIR} ${FONTS_DIR}
+	for FONT_FILE in ${FONT_FILES}; do cp $$FONT_FILE ${FONTS_DIR}; done
 
 scss: build-dirs
 	${SASS} --style compressed ${SCSS_APP_FILE} ${CSS_APP_FILE}
