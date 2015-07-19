@@ -1,12 +1,30 @@
 $ = window.jQuery
 
 $ ->
-  $('[data-collapse]').click ->
-    content = $(@).find('.collapse__content')
-    label = $(@).find('.collapse__label')
-    unless content.hasClass('open')
-      content.stop(true, false).slideDown('500').addClass('open')
-      label.addClass('open')
+  smallBreakPoint = 365
+
+  doneResizing = ->
+    if $(window).width() > smallBreakPoint
+      $("[data-collapse]").find('.collapse__content').css('display', 'block')
     else
-      content.stop(true, false).slideUp('500').removeClass('open')
-      label.removeClass('open')
+      $("[data-collapse]").find('.collapse__label').removeClass('open')
+      $("[data-collapse]").find('.collapse__content').css('display', 'none')
+
+  $(window). on 'resize', ->
+    clearTimeout(resizeId);
+    resizeId = setTimeout(doneResizing, 500);
+
+  $("[data-collapse]").on 'click', (event) ->
+    if $(window).width() < smallBreakPoint
+      content = $(event.target).closest('[data-collapse]').find('.collapse__content')
+      label = $(event.target).closest('[data-collapse]').find('.collapse__label')
+      if content.hasClass('open')
+        content.removeClass('open')
+        label.removeClass('open')
+        content.stop(true, false).slideUp(500)
+      else
+        content.addClass('open')
+        label.addClass('open')
+        content.stop(true, false).slideDown(500)
+    else
+      false

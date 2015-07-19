@@ -1,13 +1,29 @@
-$smallBreakPoint: 365px;
+$smallBreakPoint: 400px;
+$mediumBreakPoint: 600px;
+$largeBreakpoint: 1000px;
 
+$multiplier-sm: 0.8;
 $multiplier-lg: 1.2;
+$multiplier-v-lg: 1.4;
 
 $baseFontSize: 14px;
 $baseLineHeight: 20px;
-
-$font-size-lg: $baseFontSize * $multiplier-lg;
-$line-height-lg: $baseLineHeight * $multiplier-lg;
 $padding: $baseLineHeight / 2;
-$padding-lg: $padding * $multiplier-lg;
+
 $navbar-height: ($baseLineHeight * 2);
+
+$font-size-sm: $baseFontSize * $multiplier-sm;
+$font-size-lg: $baseFontSize * $multiplier-lg;
+$font-size-v-lg: $baseFontSize * $multiplier-v-lg;
+
+$line-height-sm: $baseLineHeight * $multiplier-sm;
+$line-height-lg: $baseLineHeight * $multiplier-lg;
+$line-height-v-lg: $baseLineHeight * $multiplier-v-lg;
+
+$padding-sm: $padding * $multiplier-sm;
+$padding-lg: $padding * $multiplier-lg;
+$padding-v-lg: $padding * $multiplier-v-lg;
+
+$navbar-height-sm: (($baseLineHeight * $multiplier-sm) * 2);
 $navbar-height-lg: (($baseLineHeight * $multiplier-lg) * 2);
+$navbar-height-v-lg: (($baseLineHeight * $multiplier-v-lg) * 2);

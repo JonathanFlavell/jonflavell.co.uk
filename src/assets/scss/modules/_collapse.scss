@@ -20,4 +20,11 @@
   &__content {
     display: none;
   }
+
+  @media (min-width: $smallBreakPoint) {
+    &__content {
+      display: block;
+      height: 100%;
+    }
+  }
 }

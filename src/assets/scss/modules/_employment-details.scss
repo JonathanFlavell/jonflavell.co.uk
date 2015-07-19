@@ -1,0 +1,71 @@
+.employment-details {
+  border: 1px solid $grey;
+  border-radius: $padding / 2;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  & > li {
+    padding: $padding-sm / 2;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__title {
+    &:before {
+      color: $grey;
+      content: "T: ";
+    }
+  }
+
+  &__company {
+    &:before {
+      color: $grey;
+      content: "E: ";
+    }
+  }
+
+  &__date {
+    &:before {
+      color: $grey;
+      content: "D: ";
+    }
+  }
+
+  @media (min-width: $mediumBreakPoint) {
+    & > li {
+      padding: $padding / 2;
+      font-size: $baseFontSize;
+    }
+    
+    &__title {
+      &:before {
+        content: "Title: ";
+      }
+    }
+
+    &__company {
+      &:before {
+        content: "Employer: ";
+      }
+    }
+
+    &__date {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &:before {
+        content: "Date: ";
+      }
+    }
+  }
+
+  @media (min-width: $largeBreakpoint) {
+    & > li {
+      padding: $padding-lg / 2;
+      font-size: $font-size-lg;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.cv-box {
+  @extend %border-box;
+  @extend %clearfix;
+
+  max-width: 320px;
+  width: 80%;
+  padding: 0 $padding;
+  margin: auto;
+
+  &__header {
+    color: $green;
+    font-size: $font-size-lg;
+  }
+
+  &__sub-header {
+    color: $green;
+    font-weight: bold;
+    font-size: $font-size-sm;
+  }
+
+  &__dropdown {
+
+  }
+
+  &__content {
+
+  }
+
+  @media (min-width: $smallBreakPoint) {
+    min-width: 320px;
+    max-width: 80%;
+
+    &__sub-header {
+      font-size: $baseFontSize;
+    }
+
+    &__dropdown {
+      display: none;
+    }
+  }
+
+  @media (min-width: $mediumBreakPoint) {
+    min-width: 320px;
+    max-width: 80%;
+
+    &__sub-header {
+      font-size: $font-size-lg;
+    }
+
+    &__dropdown {
+      display: none;
+    }
+  }
+
+  @media (min-width: $largeBreakpoint) {
+    min-width: 320px;
+    max-width: 80%;
+
+    &__sub-header {
+      font-size: $font-size-v-lg;
+    }
+
+    &__dropdown {
+      display: none;
+    }
+  }
+}

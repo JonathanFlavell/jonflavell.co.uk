@@ -1,8 +1,14 @@
 @import "base/_variables";
 @import "theme/colors";
 
+@import "../../../bower_components/font-awesome/scss/font-awesome";
+
 @import "mixins/clearfix";
+@import "mixins/border-box";
 
 @import "modules/footer";
 @import "modules/header";
-@import "modules/boxed-content";
+@import "modules/content";
+@import "modules/cv-box";
+@import "modules/collapse";
+@import "modules/employment-details";
