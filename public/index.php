@@ -5,7 +5,7 @@ use Symfony\Component\Yaml\Yaml;
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $app = new  \Slim\Slim([
-    'config.path' => realpath(__DIR__ . '/../src/config.yml'),
+    'data.path' => realpath(__DIR__ . '/../src/data.yml'),
     'templates.path' => __DIR__ . '/../src/views',
     'view' => new \Slim\Views\Twig()
 ]);
@@ -15,7 +15,7 @@ $app->get('/', function () use ($app) {
 });
 
 $app->get('/cv', function () use ($app) {
-    $config = Yaml::parse(file_get_contents($app->config('config.path')));
+    $config = Yaml::parse(file_get_contents($app->config('data.path')));
     $profile = $config['profile'];
     $employers = $config['employers'];
     $education = $config['education'];
