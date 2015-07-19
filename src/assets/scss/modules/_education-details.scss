@@ -1,0 +1,64 @@
+.education-details {
+  border: 1px solid $grey;
+  border-radius: $padding / 2;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  & > li {
+    padding: $paddingSmall / 2;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__qualification {
+    &:before {
+      color: $grey;
+      content: "Q: ";
+    }
+  }
+
+  &__school {
+    &:before {
+      color: $grey;
+      content: "S: ";
+    }
+  }
+
+  &__date {
+    &:before {
+      color: $grey;
+      content: "D: ";
+    }
+  }
+
+  @media (min-width: $largeBreakpoint) {
+    & > li {
+      padding: $paddingLarge / 2;
+      font-size: $fontSizeLarge;
+    }
+
+    &__qualification {
+      &:before {
+        content: "Qualification: ";
+      }
+    }
+
+    &__school {
+      &:before {
+        content: "School: ";
+      }
+    }
+
+    &__date {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &:before {
+        content: "Date: ";
+      }
+    }
+  }
+}
