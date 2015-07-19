@@ -1,0 +1,16 @@
+jobs.ac.uk:
+  jobTitle: 'Assistant Web Developer'
+  company: 'jobs.ac.uk'
+  dates: 'March 2014 - Present'
+  content: 'test'
+whisk:
+  jobTitle: 'Web Development Intern'
+  company: 'Whisk'
+  dates: 'August 2013 - January 2014'
+  content: >
+            Selected for an 8 week work experience program which quickly led to a full internship at
+            Whisk, a local startup developing a social online recipe web service with matching IOS
+            and android applications. Training with Whisk’s development team, I developed a Chrome
+            browser plugin to help the data team improve efficiency. During this time I assisted with
+            data entry and in my spare time, I helped the development team with front-end web
+            development for their admin site using AngularJS and CoffeeScript.
