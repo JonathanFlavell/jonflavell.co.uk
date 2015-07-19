@@ -1,17 +1,9 @@
 {% extends 'base.twig' %}
 
 {% block main %}
-    <div class="cv-box collapse" data-collapse>
-        <p class="cv-box__header">Profile
-            <span class="cv-box__dropdown collapse__label">&nbsp;</span>
-        </p>
-        <div class="cv-box__content collapse__content">
-            <p>
-                Graduate developer looking to launch an exciting career in the software industry. With a
-                hunger to learn and a keen passion for coding, I love the satisfaction that comes from
-                building software that is functional and exciting to others.
-            </p>
-        </div>
-    </div>
-    {% include 'cv-employment-box.twig' with {'employers': employers}%}
+    {% include 'cv-content.twig' with {'title': profile.title, 'content': profile.content} %}
+    {% include 'cv-employment-box.twig' with {'employers': employers} %}
+    {% include 'cv-education-box.twig' with {'education': education} %}
+    {% include 'cv-content.twig' with {'title': technologies.title, 'content': technologies.content} %}
+    {% include 'cv-content.twig' with {'title': interests.title, 'content': interests.content} %}
 {% endblock %}
