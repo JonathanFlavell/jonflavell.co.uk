@@ -3,6 +3,7 @@ SASS = sass --no-cache
 PREFIXER = autoprefixer
 
 BROWSERIFY = browserify
+BABELIFY = babelify
 UGLIFYJS = uglifyjs
 
 PUBLIC_DIR = ./public/assets
