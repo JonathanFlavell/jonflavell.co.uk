@@ -23,46 +23,60 @@ var Collapse = (function () {
         key: 'init',
         value: function init() {
             this.bindCollapseOnClick();
-            this.bindOnResize();
-        }
-    }, {
-        key: 'bindOnResize',
-        value: function bindOnResize() {
-            var _this = this;
-
-            $(window).on('resize', function () {
-                clearTimeout(resizeId);
-                resizeId = setTimeout(_this.doneResizing(), 500);
-            });
-        }
-    }, {
-        key: 'doneResizing',
-        value: function doneResizing() {
-            if ($(window).width() < this.breakPoint) {
-                console.log('done resizing');
-            }
         }
     }, {
         key: 'bindCollapseOnClick',
         value: function bindCollapseOnClick() {
-            if ($(window).width() < this.breakPoint) {
-                //do stuff
-            }
+            var _this = this;
+
+            $(this.element).on('click', function () {
+                if ($(window).width() < _this.breakPoint) {
+                    var collapse = $(_this.element).find('.collapse__content');
+                    $(_this.element).hasClass('open') ? collapse.slideUp() : collapse.slideDown();
+                    $(_this.element).toggleClass('open');
+                }
+            });
         }
     }]);
 
     return Collapse;
 })();
 
-exports['default'] = function () {
+exports['default'] = Collapse;
+module.exports = exports['default'];
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+    value: true
+});
+function doneResizing() {
     $.each($('[data-collapse]'), function (key, value) {
-        new Collapse(value);
+        if ($(window).width() > 400) {
+            $(value).removeClass('open');
+            $(value).find('.collapse__content').slideDown();
+        } else {
+            $(value).find('.collapse__content').slideUp();
+        }
     });
+}
+
+function bindOnResize() {
+    var resizeId = undefined;
+    $(window).on('resize', function () {
+        clearTimeout(resizeId);
+        resizeId = setTimeout(doneResizing(), 500);
+    });
+}
+
+exports['default'] = function () {
+    bindOnResize();
 };
 
 module.exports = exports['default'];
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -71,4 +85,14 @@ var _ModulesCollapseCollapseJs = require('./Modules/Collapse/Collapse.js');
 
 var _ModulesCollapseCollapseJs2 = _interopRequireDefault(_ModulesCollapseCollapseJs);
 
-},{"./Modules/Collapse/Collapse.js":1}]},{},[2]);
+var _ModulesWindowResizeJs = require('./Modules/Window/Resize.js');
+
+var _ModulesWindowResizeJs2 = _interopRequireDefault(_ModulesWindowResizeJs);
+
+$.each($('[data-collapse]'), function (key, value) {
+    new _ModulesCollapseCollapseJs2['default'](value);
+});
+
+(0, _ModulesWindowResizeJs2['default'])();
+
+},{"./Modules/Collapse/Collapse.js":1,"./Modules/Window/Resize.js":2}]},{},[3]);

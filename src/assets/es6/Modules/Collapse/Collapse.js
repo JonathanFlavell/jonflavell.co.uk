@@ -1,4 +1,4 @@
-class Collapse {
+export default class Collapse {
     constructor(element) {
         this.breakPoint = 400
         this.element = element
@@ -8,31 +8,15 @@ class Collapse {
 
     init() {
         this.bindCollapseOnClick()
-        this.bindOnResize()
-    }
-
-    bindOnResize() {
-        $(window).on('resize', () => {
-            clearTimeout(resizeId)
-            resizeId = setTimeout(this.doneResizing(), 500)
-        })
-    }
-
-    doneResizing() {
-        if ($(window).width() < this.breakPoint) {
-            console.log('done resizing')
-        }
     }
 
     bindCollapseOnClick() {
-        if ($(window).width() < this.breakPoint) {
-            //do stuff
-        }
+        $(this.element).on('click', () => {
+            if ($(window).width() < this.breakPoint) {
+                const collapse = $(this.element).find('.collapse__content')
+                $(this.element).hasClass('open') ? collapse.slideUp() : collapse.slideDown()
+                $(this.element).toggleClass('open')
+            }
+        })
     }
 }
-
-export default (() => {
-    $.each($('[data-collapse]'), (key, value) => {
-        new Collapse(value)
-    })
-})
