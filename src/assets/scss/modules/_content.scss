@@ -19,10 +19,24 @@ body {
 .content {
 
   &--fixed-heading {
-    margin-top: $navbarHeightLarge;
+    margin-top: $navbarHeightVeryLarge;
   }
 
   &--fixed-footer {
-    margin-bottom: $navbarHeightLarge;
+    margin-bottom: $navbarHeightVeryLarge;
+  }
+
+  &__text {
+    margin: 0 25%;
+    text-align: justify;
+
+    &> p > a {
+      text-decoration: none;
+      color: $green;
+
+      &:hover {
+        color: lighten($green, 20%);
+      }
+    }
   }
 }

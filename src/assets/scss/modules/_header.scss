@@ -32,6 +32,11 @@
           display: inline-block;
           font-size: $baseFontSize;
           color: $green;
+
+          & > a {
+            text-decoration: none;
+            color: $green;
+          }
         }
       }
 

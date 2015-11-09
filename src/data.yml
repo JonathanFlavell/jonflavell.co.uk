@@ -1,7 +1,7 @@
 profile:
   title: 'Profile'
   content: >
-            Graduate developer looking to launch an exciting career in the software industry.
+            A web developer at the start of an exciting career in the software industry.
             With a hunger to learn and a keen passion for coding, I love the satisfaction
             that comes from building software that is functional and exciting to others.
 employers:
@@ -10,8 +10,12 @@ employers:
     company: 'jobs.ac.uk'
     dates: 'March 2014 - Present'
     content: >
-              This is where I currently work! I haven't decided what to put in this place yet
-              so for the moment its filled with rubbish just to fill up the space :D.
+              Initially joining for 2 weeks work experience, I swiftly became a valued member of
+              the small development team at jobs.ac.uk, a world leading academic jobs board, and was
+              eventually brought on in a permanent role. During my time there I have been responsible
+              for maintaining and improving the legacy zend framework 1 code base as well as
+              developing new modular projects that can integrate with it, most notably heading up the
+              major redesign of our legacy systems for inputting advert data.
   whisk:
     jobTitle: 'Web Development Intern'
     company: 'Whisk'
@@ -32,7 +36,11 @@ education:
 technologies:
   title: 'Technologies'
   content: >
-            PHP, HTML, CSS, SASS, Javascript, Coffeescript, MySQL, AngularJS, C#
+            PHP, HTML, CSS, SASS, Javascript, JQuery, Coffeescript, EcmaScript6, MySQL, Vagrant, Docker
+methodologies:
+  title: 'Methodologies'
+  content: >
+            Agile/Scrum, Git Flow, TDD, BDD
 interests:
   title: 'Interests'
   content: >

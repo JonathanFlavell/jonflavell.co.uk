@@ -20,6 +20,7 @@ $app->get('/cv', function () use ($app) {
     $employers = $config['employers'];
     $education = $config['education'];
     $technologies = $config['technologies'];
+    $methodologies = $config['methodologies'];
     $interests = $config['interests'];
 
     $app->render('cv.twig', [
@@ -28,6 +29,7 @@ $app->get('/cv', function () use ($app) {
         'employers' => $employers,
         'education' => $education,
         'technologies' => $technologies,
+        'methodologies' => $methodologies,
         'interests' => $interests
     ]);
 });
