@@ -6,9 +6,19 @@ profile:
             that comes from building software that is functional and exciting to others.
 employers:
   jobs.ac.uk:
+    jobTitle: 'Web Developer'
+    company: 'jobs.ac.uk'
+    dates: 'March 2016 - Present'
+    content: >
+              After applying for and subsequently attaining a higher position at jobs.ac.uk, I now continue my work
+              for them with the additional responsibilities of training/mentoring junior staff members, some dev ops
+              work around maintaining the tools used on our staging/production servers and carrying out deployments.
+              I also head some of the larger projects we have. Currently I'm working on building a RESTful API, 
+              soon to be followed by a CMS which utilises it, for the content managed sections of the main site. 
+  jobs.ac.uk:
     jobTitle: 'Assistant Web Developer'
     company: 'jobs.ac.uk'
-    dates: 'March 2014 - Present'
+    dates: 'March 2014 - March 2016'
     content: >
               Initially joining for 2 weeks work experience, I swiftly became a valued member of
               the small development team at jobs.ac.uk, a world leading academic jobs board, and was
