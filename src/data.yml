@@ -13,8 +13,9 @@ employers:
               After applying for and subsequently attaining a higher position at jobs.ac.uk, I now continue my work
               for them with the additional responsibilities of training/mentoring junior staff members, some dev ops
               work around maintaining the tools used on our staging/production servers and carrying out deployments.
-              I also head some of the larger projects we have. Currently I'm working on building a RESTful API, 
-              soon to be followed by a CMS which utilises it, for the content managed sections of the main site. 
+              I also head some of the larger projects we have. At time of writing I'm currently working on building 
+              a RESTful API, soon to be followed by a CMS which utilises it, for the content managed sections of the
+              main site. 
   jobs.ac.uk:
     jobTitle: 'Assistant Web Developer'
     company: 'jobs.ac.uk'
@@ -40,13 +41,13 @@ employers:
               their admin site using AngularJS and CoffeeScript.
 education:
   title: 'Education'
-  school: 'University of Norhampton'
+  school: 'University of Northampton'
   qualification: 'BSc Computing (Software Engineering)'
   dates: 'September 2009 - July 2013.'
 technologies:
   title: 'Technologies'
   content: >
-            PHP, HTML, CSS, SASS, Javascript, JQuery, Coffeescript, EcmaScript6, MySQL, Vagrant, Docker
+            PHP, HTML, CSS, SASS, Javascript, JQuery, Coffeescript, ECMAScript6, MySQL, Vagrant, Docker
 methodologies:
   title: 'Methodologies'
   content: >
