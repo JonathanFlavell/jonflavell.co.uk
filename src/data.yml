@@ -1,7 +1,7 @@
 profile:
   title: 'Profile'
   content: >
-            A web developer at the start of an exciting career in the software industry.
+            A web developer in the midst of an exciting career in the software industry.
             With a hunger to learn and a keen passion for coding, I love the satisfaction
             that comes from building software that is functional and exciting to others.
 employers:
@@ -11,11 +11,13 @@ employers:
     dates: 'March 2016 - Present'
     content: >
               After applying for and subsequently attaining a higher position at jobs.ac.uk, I now continue my work
-              for them with the additional responsibilities of training/mentoring junior staff members, some dev ops
-              work around maintaining the tools used on our staging/production servers and carrying out deployments.
-              I also head some of the larger projects we have. At time of writing I'm currently working on building 
-              a RESTful API, soon to be followed by a CMS which utilises it, for the content managed sections of the
-              main site. 
+              for them with the additional responsibilities of training/mentoring junior staff members, maintaining
+              the tools used on our staging/production servers and carrying out deployments.
+              I've also played a pivotal role in delivering some of our larger projects, namely rebuilding the majority
+              of the site to be responsive for our mobile users and upgrading the legacy code to work with later versions
+              of PHP.
+              Recently I'm stepping further into the dev ops side and have been working in AWS to design and build the
+              infrastructure for a new service project we have in the works.
   jobs.ac.uk:
     jobTitle: 'Assistant Web Developer'
     company: 'jobs.ac.uk'
